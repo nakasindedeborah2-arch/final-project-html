@@ -94,6 +94,9 @@ header {
     cursor: pointer;
 }
 
+.butts {
+    word-spacing: 10px;
+}
 a:hover {
     text-decoration-color: #5a8d51;
     text-decoration-line: underline;
@@ -145,20 +148,11 @@ img {
     padding-top: 60px;
     padding-bottom: 0px;
 }
-
-footer {
-    background-color: #2C3E50;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 100%;
-}
-
 .div {
     background-color: #ffffff;
     text-align: center;
     width: 20%;
     height: 50%;
-    display: inline-block;
     padding-top: 15px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -167,9 +161,10 @@ footer {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
-    float: left;
+    float: none;
     margin-left: 30px;
     margin-right: 40px;
+    float: left;
 }
 
 .numbers {
@@ -233,6 +228,10 @@ p {
     gap: 5px;
 }
 
+.testimonies {
+    font-style: italic;
+}
+
 .profile-info{
     display: flex;
     flex-direction: column;
@@ -242,4 +241,69 @@ p {
     color: #2C3E50;
     padding-top: 5%;
     padding-bottom: 2%;
+}
+.social-icons {
+    color: #ffffff;
+    font-size: 26px;
+    align-items: center;
+    font-weight: 400;
+    word-spacing: 15px;
+}
+
+.social-icons :hover{
+    background-color: rgb(45, 100, 46);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #ffffff;
+    padding-top: 5%;
+    font-size: 16px;
+    margin: 0;
+}
+.footer {
+    display: flex;
+    margin-left: 30px;
+    padding-bottom: 5%;
+}
+.foot1 {
+    width: 40%;
+    margin-left: 3%;
+}
+.foot2{
+    width: 20%;
+}
+.foot3 {
+    width: 20%;
+}
+.foot4 {
+    width: 25%;
+}
+.last {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+hr{
+    stroke-opacity: 0.2px;
+}
+.h4footer {
+    font-size: 20px; 
+    text-decoration-line: underline; 
+    text-underline-offset: 10px; 
+    text-decoration: color#5a8d51;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+.linefooter {
+  width: 85%;
+  margin: 20px auto 10px auto;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.contact-info {
+    word-spacing: 10px;
 }
