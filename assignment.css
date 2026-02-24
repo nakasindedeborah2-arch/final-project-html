@@ -196,6 +196,50 @@ p {
     max-width: 1770px;
     text-align: center;
     font-size: 20px;
+}
 
+.boxes {
+    background-color: #ffffff;
+    text-align: center;
+    width: 28%;
+    height: 50%;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
+.luca {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.healing {
+    color: #2C3E50;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
