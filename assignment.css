@@ -17,7 +17,6 @@ header {
     font: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-    max-width: 1770px;
     height: auto;
     display: flex;
 }
@@ -188,7 +187,6 @@ p {
     background-size: cover;
     height: 700px;
     width: 100%;
-    max-width: 1770px;
     text-align: center;
     font-size: 20px;
 }
@@ -307,3 +305,5 @@ hr{
 .contact-info {
     word-spacing: 10px;
 }
+
+
