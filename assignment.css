@@ -166,6 +166,19 @@ img {
     float: left;
 }
 
+.div {
+    transition: transform 0.25s ease;
+}
+
+.div :hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.div * {
+    pointer-events: none;
+}
+
 .numbers {
     font-weight: 800;
     color: #5a8d51;
@@ -306,4 +319,19 @@ hr{
     word-spacing: 10px;
 }
 
+.hamburger {
+    font-size: larger;
+    display: none;
+    margin-right:60px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    a { 
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
 
