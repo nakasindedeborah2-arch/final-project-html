@@ -130,23 +130,64 @@ img {
     padding: 40px;
     display: -webkit-flex;
     display: flex;
-    height: 100%;
     background-size: cover;
     font-size: 20px;
     padding-top: 80px;
     padding-bottom: 80px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .second {
+        display: block;
+        height: auto;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        background-color: #ffffff;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 20px auto;
+        align-items: center;
+    }
+    .mission {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+    nav, .mission {
+        width: 100%;
+        display: block;
+    }
 }
 
 .third {
     background-color: #e9ddc9;
     font-size: 20px;
-    height: 700px;
+    height: auto;
+    min-height: 700px;
     background-size: cover;
     width: 100%;
-    max-width: 1770px;
     padding-top: 60px;
     padding-bottom: 0px;
 }
+
+@media screen and (max-width: 900px) {
+    .third {
+        display: block;
+        height: auto;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+    }
+    .div {
+        float: none;
+    }
+}
+
 .div {
     background-color: #ffffff;
     text-align: center;
@@ -204,6 +245,11 @@ p {
     font-size: 20px;
 }
 
+@media screen and (max-width: 900px) {
+    .fourth {
+        display: block;
+    }
+}
 .boxes {
     background-color: #ffffff;
     text-align: center;
@@ -225,6 +271,11 @@ p {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 900px) {
+    box {
+        display: block;
+    }
+}
 .luca {
     width: 70px;
     height: 70px;
@@ -272,6 +323,7 @@ footer {
     padding-top: 5%;
     font-size: 16px;
     margin: 0;
+    width: 100%;
 }
 .footer {
     display: flex;
@@ -334,4 +386,3 @@ hr{
         display: block;
     }
 }
-
