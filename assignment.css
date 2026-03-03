@@ -96,6 +96,7 @@ header {
 .butts {
     word-spacing: 10px;
 }
+
 a:hover {
     text-decoration-color: #5a8d51;
     text-decoration-line: underline;
@@ -112,6 +113,7 @@ a:hover {
     padding-top: 100px;
     color: #2C3E50;
     padding-right: 50px;
+    margin-bottom: 30px;
 }
 
 img {
@@ -136,6 +138,7 @@ img {
     padding-bottom: 80px;
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 900px) {
@@ -147,18 +150,24 @@ img {
         background-position: center;
         padding: 20px;
         background-color: #ffffff;
+        min-height: 1200px;
     }
+
     img {
         width: 100%;
         height: auto;
         margin: 0 auto 20px auto;
         align-items: center;
     }
+
     .mission {
         font-size: 18px;
         margin-top: 0px;
+        padding-top: 0px;
     }
-    nav, .mission {
+
+    nav,
+    .mission {
         width: 100%;
         display: block;
     }
@@ -177,14 +186,35 @@ img {
 
 @media screen and (max-width: 900px) {
     .third {
-        display: block;
+        display: grid;
         height: auto;
         align-items: center;
         background-size: cover;
         background-position: center;
+        background-color: #e9ddc9;
+        margin-top: 10px;
+        min-height: 1000px;
     }
+
     .div {
+        height: auto;
+        width: 100%;
         float: none;
+        margin: 0 0 20px 0;
+        padding: 90px;
+        box-sizing: border-box;
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(360px,1fr));
+        gap: 5px;
+        padding: 0 0px;
+        width: 100%;
+    }
+
+    .icon-row {
+        font-size: 30px;
     }
 }
 
@@ -192,7 +222,7 @@ img {
     background-color: #ffffff;
     text-align: center;
     width: 20%;
-    height: 50%;
+    height: auto;
     padding-top: 15px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -250,6 +280,7 @@ p {
         display: block;
     }
 }
+
 .boxes {
     background-color: #ffffff;
     text-align: center;
@@ -276,6 +307,7 @@ p {
         display: block;
     }
 }
+
 .luca {
     width: 70px;
     height: 70px;
@@ -294,7 +326,7 @@ p {
     font-style: italic;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     flex-direction: column;
 }
@@ -304,6 +336,7 @@ p {
     padding-top: 5%;
     padding-bottom: 2%;
 }
+
 .social-icons {
     color: #ffffff;
     font-size: 26px;
@@ -312,7 +345,7 @@ p {
     word-spacing: 15px;
 }
 
-.social-icons :hover{
+.social-icons :hover {
     background-color: rgb(45, 100, 46);
     cursor: pointer;
 }
@@ -325,48 +358,58 @@ footer {
     margin: 0;
     width: 100%;
 }
+
 .footer {
     display: flex;
     margin-left: 30px;
     padding-bottom: 5%;
 }
+
 .foot1 {
     width: 40%;
     margin-left: 3%;
 }
-.foot2{
+
+.foot2 {
     width: 20%;
 }
+
 .foot3 {
     width: 20%;
 }
+
 .foot4 {
     width: 25%;
 }
+
 .last {
     text-align: center;
     padding-bottom: 20px;
     margin-bottom: 0;
 }
-hr{
+
+hr {
     stroke-opacity: 0.2px;
 }
+
 .h4footer {
-    font-size: 20px; 
-    text-decoration-line: underline; 
-    text-underline-offset: 10px; 
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
     text-decoration: color#5a8d51;
     position: relative;
     display: inline-block;
     padding-bottom: 6px;
     font-weight: bold;
 }
+
 .linefooter {
-  width: 85%;
-  margin: 20px auto 10px auto;
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+    width: 85%;
+    margin: 20px auto 10px auto;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 .contact-info {
     word-spacing: 10px;
 }
@@ -374,14 +417,15 @@ hr{
 .hamburger {
     font-size: larger;
     display: none;
-    margin-right:60px;
+    margin-right: 60px;
     font-size: 20px;
 }
 
 @media screen and (max-width: 900px) {
-    a { 
+    a {
         display: none;
     }
+
     .hamburger {
         display: block;
     }
