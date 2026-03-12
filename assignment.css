@@ -195,10 +195,14 @@ img {
 
     .div {
         height: auto;
-        width: 50%;
+        width: 40%;
         float: none;
         margin: 0 0 20px 0;
-        min-width: 50%;
+        font-size: 16px;
+        min-height: 0;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 10px;
     }
 }
 
@@ -222,19 +226,20 @@ img {
         background-position: center;
         background-color: #e9ddc9;
         margin-top: 10px;
-        min-height: 1000px;
+        min-height: 920px;
     }
 
     .box {
-        display:grid;
-        column-gap: 5px;
-        justify-content: space-between;
+        display:flex;
         grid-template-columns: repeat(2, minmax(380px,3fr));
         padding: 0 0px;
         width: 100%;
         max-width: 100% ;
         box-sizing: border-box;
-        margin: 0;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .icon-row {
@@ -268,17 +273,6 @@ p {
     font-size: 20px;
 }
 
-@media screen and (max-width: 900px) {
-    .fourth {
-        display: block;
-        height: auto;
-        margin-bottom: 80px;
-    }
-    .boxes {
-        display: block;
-    }
-}
-
 .boxes {
     background-color: #ffffff;
     text-align: center;
@@ -300,12 +294,34 @@ p {
     margin-right: 30px;
 }
 
+@media screen and (max-width: 900px) {
+    .fourth {
+        display: block;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    .boxes {
+        display: block;
+        width: 90%;
+    }
+}
+
 .luca {
     width: 70px;
     height: 70px;
     border-radius: 50%;
     margin-right: 15px;
     object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+    .luca {
+        margin: 0;
+    }
+    .box2 {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .testimonial-card {
